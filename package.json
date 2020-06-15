@@ -1,0 +1,14 @@
+{
+  "name": "introduction-to-python",
+  "version": "1.0.0",
+  "description": "## Who's the Target Audience of This Guide?",
+  "scripts": {
+    "dev": "docsify serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "docsify": "^4.11.3"
+  }
+}
