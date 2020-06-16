@@ -1,3 +1,132 @@
 # Setup
 
-## CRA
+## create-react-app
+
+create-react-app (often abbreviated as CRA) is an easy way to create new React app.
+It does not only generate a new project using React for you, but also hides
+lots of configuration from you (babel, webpack).
+
+```bash
+npx create-react-app my-app
+```
+
+You can then cd into the directory and start the development server:
+
+```bash
+cd my-app
+npm run start
+```
+
+## Project Structure
+
+The following project was created for you:
+
+```
+my-app
+├── node_modules
+│   └── ...
+├── package.json
+├── package-lock.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── README.md
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    ├── serviceWorker.js
+    └── setupTests.js
+```
+
+- `node_modules`: contains your downloaded dependencies
+- `package.json`: lists all your dependencies, contains some scripts and has meta information about
+  your project like version and description.
+- `package-lock.json`: you shouldn't have to touch this file.
+- `public`: contains files that will be directly served by the web server, like favicons,
+  manifest.json, and assets (images, fonts) that you don't want to be process any further.
+- `README.md`: a simple readme will be generated for you, showing you how to run your project.
+- `src`: this is the folder you'll work in the most. It basically contains all your code, so JS and
+  CSS.
+
+Let's take a look at the src files:
+
+### src/index.js
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+serviceWorker.unregister();
+```
+
+You don't need to touch this file yet.
+
+The interesting part, however, is
+```js
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+```
+
+This basically says "put our component `<App />` into the `#root` element".
+The root element is the one found in the `public/index.html` file.
+
+### src/App.js
+
+```js
+import React from 'react'; // imports React (needed in all components)
+import logo from './logo.svg'; //imports an svg
+import './App.css'; // loads the styles from App.css
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App; // exports the component for use in other files
+```
+
+### Other files
+- `index.css` contains overall styles, not related to a specific component; it is imported by the
+`index.js` file.
+- `App.css` contains styles related to the `<App />` component; it is imported by the `App.js` file.
+- `App.test.js` and `setupTests.js` are used for testing; you can delete them for now.
+- `serviceWorker.js` isn't relevant right now either, it would allow you to make your web app a PWA
+(so you could make your app available offline etc.).
+- `logo.svg` is a simple asset imported by our `<App />` component.

@@ -1,3 +1,5 @@
 # Basics
 
-## Hooks vs Classes
+## Components
+
+### Hooks vs Classes

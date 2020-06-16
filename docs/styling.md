@@ -1,3 +1,3 @@
 # Styling
 
-## JSX
+## styled-jsx

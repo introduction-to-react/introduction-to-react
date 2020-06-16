@@ -4,6 +4,7 @@
 - [Setup](setup.md)
 - [Basics](basics.md)
 - [Styling](styling.md)
+- [HTTP Requests](http.md)
 - [Routing](routing.md)
 - [State Management with MobX](mobx.md)
 - [Advanced Concepts](advanced.md)
