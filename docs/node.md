@@ -15,7 +15,7 @@ Your npm dependencies are specified in the file `package.json`
 You could write the package.json file by hand, but it's more convenient to generate it using the `npm init` command.
 You'll be asked several questions like your projects description etc. and at the end you'll get a `package.json` that looks something like this:
 
-```json
+```jsxon
 {
   "name": "my-app",
   "version": "1.0.0",
@@ -49,7 +49,7 @@ To install normal and dev dependencies, run `npm install --dev`
 
 You can create scripts in your `package.json` file:
 
-```json
+```jsxon
 {
  ...
   "scripts": {

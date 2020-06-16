@@ -4,7 +4,7 @@
 React uses components, which you can think of as your own re-usable "HTML tags".
 For example you could write a `navbar.js` and `navbar-item.js` file and then use them in another
 file:
-```js
+```jsx
 import Navbar from "./navbar.js"
 import NavbarItem from "./navbar-item.js"
 

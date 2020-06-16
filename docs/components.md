@@ -23,7 +23,7 @@ file. Your components can also receive **props** to allow them to be more flexib
 
 `navbar-item.js`:
 
-```js
+```jsx
 import React from "react"
 
 function NavbarItem(props) {
@@ -45,7 +45,7 @@ You can the import the component in another file and use it:
 
 `App.js`:
 
-```js
+```jsx
 import React from "react"
 import NavbarItem from "./components/navbar-item"
 
@@ -76,7 +76,7 @@ variable's value changes, your components re-renders to show the current value.
 
 ### Example
 
-```js
+```jsx
 import React, { useState } from "react"
 
 export default () => {

@@ -59,7 +59,7 @@ my-app
 Let's take a look at the src files:
 
 ### src/index.js
-```js
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -79,7 +79,7 @@ serviceWorker.unregister();
 You don't need to touch this file yet.
 
 The interesting part, however, is
-```js
+```jsx
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -93,7 +93,7 @@ The root element is the one found in the `public/index.html` file.
 
 ### src/App.js
 
-```js
+```jsx
 import React from 'react'; // imports React (needed in all components)
 import logo from './logo.svg'; //imports an svg
 import './App.css'; // loads the styles from App.css
