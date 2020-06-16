@@ -11,7 +11,7 @@
   - [Setup](setup.md)
   - [Components basics and props](components.md)
   - [State and two-way binding](state.md)
-  - [Conditional rendering and iterating](state.md)
+  - [Conditional rendering and iterating](cond_rendering_iterating.md)
   - [Styling](styling.md)
 
 - [styled-jsx](styling.md)
