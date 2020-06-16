@@ -2,6 +2,12 @@
 
 JavaScript is being developed actively and gets frequent additions.
 
+## Babel
+TODO:
+
+## Webpack
+TODO:
+
 ## let/const
 
 `let` and `const` were introduced in ECMAScript2015 (ES6) and are a new way to declare variables.
@@ -52,9 +58,15 @@ console.log(increment(1)) // prints '2'
 
 Normal functions and arrow functions aren't equivalent, though.
 Normal functions have their own `this`, arrow functions do not.
+
 Consider the following example:
 TODO:
 
+## Promises
+TODO:
+
 ## async/await
+TODO:
 
 ## Destructuring
+TODO:

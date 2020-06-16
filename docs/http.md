@@ -1,1 +1,44 @@
 # HTTP requests using axios
+
+Axios is one of several ways of making http requests.
+Other popular alternatives are the Fetch api or XMLHttpRequest.
+
+To install it, simply run `npm install axios`. You can then import it using `import axios from 'axios';`
+
+## GET request
+
+```js
+import axios from "axios"
+
+async function myFunc() {
+  try {
+    // this will become https://some-api.com/?search=how%20to%20use%20axios
+    const reponse = await axios.get("https://some-api.com/", {
+      params: {
+        search: "how to use axios",
+      },
+    })
+    console.log(reponse)
+  } catch (error) {
+    console.log(error)
+  }
+}
+```
+
+## POST request
+
+```js
+import axios from "axios"
+
+async function myFunc() {
+  try {
+    const reponse = await axios.post("https://some-api.com/", {
+      //this is the request's body
+      name: "Michael",
+    })
+    console.log(reponse)
+  } catch (error) {
+    console.log(error)
+  }
+}
+```
