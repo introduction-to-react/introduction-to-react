@@ -25,7 +25,7 @@ export default () => {
 }
 ```
 
-The `p` tag is only rendered when the expression on the left side of the `&&` evalutes to true,
+The `p` tag is only rendered when the expression on the left side of the `&&` evaluates to true,
 so when `showElement` is true.
 
 ## Iterating

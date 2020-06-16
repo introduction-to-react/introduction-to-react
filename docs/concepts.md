@@ -20,11 +20,11 @@ import NavbarItem from "./navbar-item.js"
 ## Reactive
 React is reactive, meaning a change in a components "state" triggers a re-render.
 Let's say you have a variable `counter` and you display that in your HTML(actually JSX, more about
-that later) then everytime the value of `counter` changes, the HTML where you used that variable in
+that later) then every time the value of `counter` changes, the HTML where you used that variable in
 re-renders to show the current value of the variable.
 
 ## Virtual DOM
 Since changes to the DOM (Document Object Model, basically the "living form of your HTML") are very
 resource-expensive, React maintains a so-called "Virtual DOM", which is kind of a copy of the real
 DOM. All changes a done to the virtual DOM at first. After that, the virtual DOM calculates the most
-perfomant method to make these changes to the real DOM. 
+efficient method to make these changes to the real DOM. 

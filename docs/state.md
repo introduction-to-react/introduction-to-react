@@ -59,4 +59,4 @@ export default () => {
 You can simply bind the value of `text` to the value attribute from the `<input>` element.
 Whenever the input's value changes, the function passed to `onChange` will be executed and receive
 the new value.
-Now, in `handleChange()`, we set the new value using `text`'s setter.
+Now, in `handleChange()`, we set the new value the setter.

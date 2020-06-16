@@ -1,7 +1,7 @@
 # HTTP requests using axios
 
-Axios is one of several ways of making http requests.
-Other popular alternatives are the Fetch api or XMLHttpRequest.
+Axios is one of several ways of making HTTP requests.
+Other popular alternatives are the Fetch API or XMLHttpRequest.
 
 To install it, simply run `npm install axios`. You can then import it using `import axios from 'axios';`
 
