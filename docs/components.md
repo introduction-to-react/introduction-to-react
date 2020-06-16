@@ -1,4 +1,4 @@
-# Basics + Components
+# Basic components and state
 
 ## JSX
 
@@ -17,7 +17,8 @@ custom "HTML tags" that you can re-use.
 Every component usually gets their own file.
 Typical components would be navbars, buttons, data pickers, color pickers and so on.
 But also every route of your web app (like `/about` or `/contact`) will most likely get their own
-file. Your components can also receive **props** to allow them to be more flexible.
+file. Your components can also receive **props** from their parent component to allow them to be
+more flexible.
 
 ### Example component
 
@@ -67,38 +68,3 @@ function App() {
 
 export default App
 ```
-
-## State
-
-Components can have a state, which are variables that belong to the component and
-[are reactive](concepts.md#reactive). When you use those variables in your component and that
-variable's value changes, your components re-renders to show the current value.
-
-### Example
-
-```jsx
-import React, { useState } from "react"
-
-export default () => {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div>
-      <p>{count}</p>
-      <button
-        onClick={() => {
-          setCount(count + 1)
-        }}
-      >
-        Increment
-      </button>
-    </div>
-  )
-}
-```
-
-As you can see, we can receive a new state variable and setter using the `useState()` hook and tell
-it its initial value.
-Whenever you want to change the variables value, you **have to use its setter**.
-
-## Function vs class-based components

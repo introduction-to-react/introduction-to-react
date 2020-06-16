@@ -1,3 +1,7 @@
 # Styling
 
-## styled-jsx
+## External stylesheets
+
+## Dynamic styles
+
+
