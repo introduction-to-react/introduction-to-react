@@ -13,3 +13,5 @@ be changed.
 ## Arrow functions
 
 ## async/await
+
+## Destructuring
