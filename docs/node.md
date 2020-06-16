@@ -1,4 +1,4 @@
-# Prerequesites
+# Node and NPM
 
 ## Node
 
@@ -46,7 +46,9 @@ To install the dependencies listed in the package.json file, you can simply run 
 To install normal and dev dependencies, run `npm install --dev`
 
 ### NPM scripts
+
 You can create scripts in your `package.json` file:
+
 ```json
 {
  ...
@@ -58,5 +60,3 @@ You can create scripts in your `package.json` file:
 ```
 
 This script can be run using `npm run start` and it simply executes the file `index.js` using Node.js.
-
-## Modern Javascript
