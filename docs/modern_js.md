@@ -113,6 +113,22 @@ async function getData() {
 }
 ```
 
+## Object assignment with same key/value names
+
+When you want to assign a key a value in an object and the key is the same as the variable's name
+you would like to use as the value, it suffices to just write the key.
+
+So the following are equivalent:
+
+```js
+const myVariable = 1
+
+let obj = { myVariable: myVariable }
+
+// equivalent
+obj = { myVariable } // same as { myVariable: myVariable }
+```
+
 ## Destructuring
 
 The destructuring makes it possible to unpack values from arrays or objects into variables.
@@ -133,4 +149,32 @@ const { x, y, z } = object // x = 1, y = 2, z = 3
 const { x: i, y: j, z: k } = object // i = 1, j = 2, z = 3
 
 let { x: myX, ...rest } = object // myX = 1, rest = { y: 2, z: 3}
+```
+
+## import/export
+TODO:
+
+## Modern JS Example:
+
+```js
+// port has default value of 80
+const get = async ({ host, port = 80, route, params }) => {
+  let paramsString = ""
+  for (key in params) {
+    paramsString += `?${key}=${params[key]}`
+  }
+
+  return await fetch(`https://${host}:${port}/${route}${paramsString}`)
+}
+
+const options = {
+  host: "example.com",
+  port: 8080,
+  route: "api",
+  params: { search: "apple" },
+}
+
+get(options)
+  .then((response) => console.log(response))
+  .catch((error) => console.log(error))
 ```
