@@ -1,24 +1,36 @@
 # Sidebar navigation
 
-- label: 'Introduction'
-  link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
-- label: Usage
+- label: "Introduction"
+  link: "/"
+- label: "Prerequisites"
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'
-- label: More
+    - label: "Node"
+      link: "prerequisites/node"
+    - label: "Modern Javascript"
+      link: "prerequisites/modern-js"
+- label: "Basics"
   items:
-    - label: FAQ
-      link: /faq
-    - label: Changelog
-      link: /changelog
-- label: Community
+    - label: "Concepts"
+      link: "basics/concepts"
+    - label: "Setup"
+      link: "basics/setup"
+    - label: "Components"
+      link: "basics/components"
+    - label: "State"
+      link: "basics/state"
+    - label: "Coniditional Rendering and Iterating"
+      link: "basics/cond-rendering-iterating"
+    - label: "Styling"
+      link: "basics/styling"
+- label: "Advanced"
   items:
-    - label: 'Github'
-      link: https://github.com/rocketseat/gatsby-themes
+    - label: "styled-jsx"
+      link: "advanced/styled-jsx"
+    - label: "HTTP"
+      link: "advanced/http"
+    - label: "Routing"
+      link: "advanced/routing"
+    - label: "MobX"
+      link: "advanced/mobx"
+    - label: "Advanced"
+      link: "advanced/advanced"

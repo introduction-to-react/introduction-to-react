@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.com`,
-    siteAuthor: `@rocketseat`,
-    siteImage: `/banner.png`,
+    siteTitle: `Introduction to React`,
+    defaultTitle: `Introduction to React`,
+    siteTitleShort: `Introduction to React`,
+    siteDescription: `An opinionated introduction to React`,
+    siteUrl: `https://react.mkoe.io`,
+    siteAuthor: `Michael König`,
     siteLanguage: `en`,
-    themeColor: `#8257E6`,
+    siteImage: "",
+    themeColor: `#61dafb`,
     basePath: `/`,
   },
   plugins: [
@@ -17,7 +17,7 @@ module.exports = {
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
-        githubUrl: `https://github.com/rocketseat/gatsby-themes`,
+        githubUrl: `https://github.com/introduction-to-react/introduction-to-react`,
         baseDir: `examples/gatsby-theme-docs`,
       },
     },
@@ -48,4 +48,4 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
-};
+}
