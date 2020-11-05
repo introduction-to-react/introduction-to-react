@@ -9,7 +9,7 @@ It does not only generate a new project using React for you, but also hides
 lots of configuration from you (babel, webpack).
 
 ```bash
-npx create-react-app my-app asdf
+npx create-react-app my-app
 ```
 
 You can then cd into the directory and start the development server:
@@ -48,15 +48,15 @@ my-app
     └── setupTests.js
 ```
 
-- `node_modules`: contains your downloaded dependencies
+- `node_modules`: contains the downloaded dependencies
 - `package.json`: lists all your dependencies, contains some scripts and has meta information about
-  your project like version and description.
-- `package-lock.json`: you shouldn't have to touch this file.
+  your project like version and description
+- `package-lock.json`: you shouldn't have to touch this file. It locks the versions of the dependencies you rely on
 - `public`: contains files that will be directly served by the web server, like favicons,
-  manifest.json, and assets (images, fonts) that you don't want to be process any further.
-- `README.md`: a simple readme will be generated for you, showing you how to run your project.
-- `src`: this is the folder you'll work in the most. It basically contains all your code, so JS and
-  CSS.
+  manifest.json, and assets (images, fonts) that you don't want to be process any further
+- `README.md`: a simple readme will be generated for you, showing you how to run your project
+- `src`: this is the folder you'll work in the most. It basically contains all your code, including JS and
+  CSS
 
 Let's take a look at the src files:
 

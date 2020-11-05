@@ -3,6 +3,8 @@ title: Modern JavaScript
 ---
 
 JavaScript is being developed actively and gets frequent additions.
+The by far most used standardization is **ECMAScript**. It gets new features regularely, so for example you'll come across **ES6** (also called ECMAScript2015), which added new features like block-scoped variables and more.
+Many of the new features are documented below.
 
 # CRA with Babel and Webpack
 
@@ -24,10 +26,23 @@ or images.
 # let/const
 
 `let` and `const` were introduced in ECMAScript2015 (ES6) and are a new way to declare variables.
-You should avoid `var` when possible, since `var` declare global variables.
+You should avoid `var` when possible, since `var` declares global variables.
 
 Variables declared with `let` are block-scoped and `const` variables are final, so their value can't
-be changed.
+be reassigned.
+
+Don't confuse const with `Object.freeze()`. A const variable cannot be reassigned, but if it contains an object its values can still be changed:
+
+```js
+const x = { a: 1 }
+x.a = 2
+console.log(x.a) // 2
+
+const y = { a: 1 }
+Object.freeze(y) // Object can't be mutated anymore
+y.a = 2 // doesn't change object and doesn't throw an error
+console.log(y.a) // 1
+```
 
 # Template literals
 
@@ -96,7 +111,7 @@ When the promises gets **rejected**, the function passed to `catch()` will be ex
 
 # async/await
 
-To make working with promises more comfortable and avoid to many `.then()` calls,
+To make working with promises more comfortable and avoid too many nested `.then()` calls,
 you can use async/await.
 You can `await` calls to asynchronous functions and block the current function till the
 promises which is being awaited is resolved.
@@ -153,9 +168,62 @@ const { x: i, y: j, z: k } = object // i = 1, j = 2, z = 3
 let { x: myX, ...rest } = object // myX = 1, rest = { y: 2, z: 3}
 ```
 
-# import/export
+# import/export (ES modules)
 
-TODO:
+When working with node you might also come across `require()` and `exports`; that means you're working with **commonjs** modules.
+This section, however, describes ES6 modules, which differ in syntax.
+
+## Export and import default
+
+Every file can have a maximum of one default export:
+
+`config.js:`
+
+```js
+const font = "#51D415"
+export default primary
+```
+
+Importing the default export looks like the following:
+
+`main.js:`
+
+```js
+// Default export will be imported with the name "myFont"
+// You can import it with any name you want
+import myFont from "./config.js"
+```
+
+## Named exports
+
+`config.js:`
+
+```js
+const colors = {
+  primary: "#ff0000",
+  secondary: "#ffff00",
+  background: "#ffffff",
+}
+
+const fontSizes = {
+  heading: "36px",
+  text: "12px",
+}
+
+export { colors, fontSizes }
+
+// you can also export it under an alias:
+// export { colors as myAlias }
+```
+
+`main.js:`
+
+```js
+// here, the name matters
+import { colors, fontSizes } from "./config.js"
+// Or import it with a different name:
+// import { colors as themeColors} from './config.js'
+```
 
 # Modern JS Example
 
