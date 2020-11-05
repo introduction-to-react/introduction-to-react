@@ -30,7 +30,12 @@ export default function GlobalStyle() {
           font-size: 32px;
           color: ${theme.colors.title};
           font-weight: bold;
-          margin-bottom: 24px;
+          margin-top: 24px;
+          margin-bottom: 12px;
+        }
+
+        Main h1:first-of-type {
+            font-size: 36px;
         }
 
         h2 {
