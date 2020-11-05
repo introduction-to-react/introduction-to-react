@@ -22,7 +22,7 @@
       link: "basics/cond-rendering-iterating"
     - label: "Styling"
       link: "basics/styling"
-    - label: "Routing"
+    - label: "Routing with React Router"
       link: "basics/routing"
     - label: "Example"
       link: "basics/example"

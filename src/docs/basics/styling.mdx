@@ -4,4 +4,39 @@ title: Styling
 
 # External stylesheets
 
-# Dynamic styles
+You can just create an external stylesheet and import it in your application the
+following way:
+
+`index.js:`
+
+```js
+import "./styles.css"
+```
+
+# Inline styles
+
+In CSS, propierties use kebab-case (e.g. `font-size`).
+In JS, camelCase is used (e.g. `fontSize`).
+
+```jsx
+// Numbers (not string) are automically understood as pixels
+// You can also use JS variables; as you can see, the color is set to
+// theme.color.primary here. If the value of it changes, the styling will
+// adjust too
+<div style={{width: '100%', height: 200, fontSize=16, color: theme.color.primary}}>
+</div>
+
+// Always applies the my-div-style class
+// When the variable isDarkMode is set to true, the class dark-mode is added,
+// otherwise the class light-mode is used
+<div className={`my-div-style ${isDarkMode ? "dark-mode" : "light-mode" }`}>
+</div>
+```
+
+# CSS-in-JS
+
+Another common approach is to use CSS within JS.
+This allows you to easily create dynamic styles and style your components based
+on JS logic.
+
+[styled-jsx](advanced/styled-jsx) is one common library for CSS-in-JS.
