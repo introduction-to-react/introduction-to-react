@@ -85,12 +85,17 @@ export default function GlobalStyle() {
         }
 
         a {
-          color: ${theme.colors.text};
+          color: ${theme.colors.primary};
           font-weight: bold;
-          text-decoration: none;
+          text-decoration: none;         
+        }
+
+        p a {
+          border-bottom: 1px solid ${theme.colors.primary};
 
           &:hover {
-            text-decoration: underline;
+            border-bottom: 2px solid ${theme.colors.primary};
+            font-weight: 900;
           }
         }
 

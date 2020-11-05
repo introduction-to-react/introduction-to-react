@@ -3,8 +3,8 @@ title: State and Two-Way Data Binding
 ---
 
 Components can have a state, which are variables that belong to the component and
-[are reactive](concepts.md#reactive). When you use those variables in your component and that
-variable's value changes, your components re-renders to show the current value.
+[are reactive](concepts#reactive). When you use those variables in your component and that
+variable's value changes, your component re-renders to show the current value.
 
 # Example
 
@@ -29,7 +29,7 @@ export default () => {
 }
 ```
 
-As you can see, we can receive a new state variable and setter using the `useState()` hook and tell
+As you can see, we can receive a new state variable and setter for the variable by using the `useState()` [hook](https://reactjs.org/docs/hooks-intro.html) and tell
 it its initial value.
 Whenever you want to change the variables value, you **have to use its setter**.
 

@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 2000px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 24px;
 
@@ -37,7 +37,6 @@ export const Main = styled.main`
 
 export const Children = styled.div`
   width: 100%;
-  max-width: calc(75% - 64px);
   padding-right: 64px;
 
   @media (max-width: 1200px) {
