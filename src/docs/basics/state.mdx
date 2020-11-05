@@ -2,6 +2,8 @@
 title: State and Two-Way Data Binding
 ---
 
+import Sandbox from "../../Sandbox.js"
+
 Components can have a state, which are variables that belong to the component and
 [are reactive](concepts#reactive). When you use those variables in your component and that
 variable's value changes, your component re-renders to show the current value.
@@ -38,25 +40,7 @@ you click on it.
 
 # Two-way binding (binding state to input)
 
-```jsx
-import React, { useState } from "react"
-
-export default () => {
-  const [text, setText] = useState("")
-
-  const handleChange = (event) => {
-    setText(event.target.value) // set new value
-  }
-
-  return (
-    <div>
-      <input value={text} type="text" onChange={handleChange} />
-      <br />
-      current value: {text}
-    </div>
-  )
-}
-```
+<Sandbox example="two-way-data-binding" />
 
 You can simply bind the value of `text` to the value attribute from the `<input>` element.
 Whenever the input's value changes, the function passed to `onChange` will be executed and receive
