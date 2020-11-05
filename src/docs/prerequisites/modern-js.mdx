@@ -177,18 +177,14 @@ This section, however, describes ES6 modules, which differ in syntax.
 
 Every file can have a maximum of one default export:
 
-`config.js:`
-
-```js
+```js title=config.js
 const font = "#51D415"
 export default primary
 ```
 
 Importing the default export looks like the following:
 
-`main.js:`
-
-```js
+```js title=main.js
 // Default export will be imported with the name "myFont"
 // You can import it with any name you want
 import myFont from "./config.js"
@@ -196,9 +192,7 @@ import myFont from "./config.js"
 
 ## Named exports
 
-`config.js:`
-
-```js
+```js title=config.js
 const colors = {
   primary: "#ff0000",
   secondary: "#ffff00",
@@ -216,9 +210,7 @@ export { colors, fontSizes }
 // export { colors as myAlias }
 ```
 
-`main.js:`
-
-```js
+```js title=main.js
 // here, the name matters
 import { colors, fontSizes } from "./config.js"
 // Or import it with a different name:

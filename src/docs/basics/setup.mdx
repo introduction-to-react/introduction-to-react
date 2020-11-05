@@ -62,7 +62,7 @@ Let's take a look at the src files:
 
 ## src/index.js
 
-```jsx
+```jsx title=src/index.js
 import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
@@ -83,7 +83,7 @@ You don't need to touch this file yet.
 
 The interesting part, however, is the following:
 
-```jsx
+```jsx title=src/index.js
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -97,7 +97,7 @@ The root element is the one found in the `public/index.html` file.
 
 ## src/App.js
 
-```jsx
+```jsx title=src/App.js
 import React from "react" // imports React (needed in all components)
 import logo from "./logo.svg" //imports an svg
 import "./App.css" // loads the styles from App.css
