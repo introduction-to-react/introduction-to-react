@@ -24,6 +24,8 @@
       link: "basics/styling"
     - label: "Routing"
       link: "basics/routing"
+    - label: "Example"
+      link: "basics/example"
 - label: "Next.js"
   items:
     - label: "Introduction"
