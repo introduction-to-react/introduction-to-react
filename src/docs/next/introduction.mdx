@@ -1,3 +1,38 @@
 ---
 title: Introduction to Next.js
 ---
+
+Next.js is a framework for React (yep, a framework for a framework) and
+simplifies React development, but also adds new features that are fairly easy
+to use:
+
+- Internationalization
+- Image Optimization
+- Analytics
+- Less configuration
+- SSR and SSG
+- File-based routing
+- Built-in component-scoped styling and SASS support
+- Create API endpoint for backend functionality
+
+# Server-Side Rendering (SSR)
+
+Before sending the website to the browser, it gets prerender on the server.
+This has the following advantages:
+
+- Better Search Engine Optimization
+- Servers are faster than client's browser -> faster loading
+- dynamic html meta tags, for example for [structured data](https://developers.google.com/search/docs/guides/intro-structured-data#:~:text=Structured%20data%20is%20a%20standardized,the%20calories%2C%20and%20so%20on.)
+
+# Static Site Generation (SSG)
+
+When running in SSG mode, static sites are output, so you don't need a
+server running.
+
+Unlike normal SPAs like when using normal React, however, the sites are
+delivered empty to the user. Instead, the HTML is delivered pre-prerendered
+to the user
+
+- Lower costs
+- Easy deployments to CDNS
+- Better SEO and performance than non-pre-rendered SPAs

@@ -30,8 +30,12 @@
   items:
     - label: "Introduction"
       link: "next/introduction"
+    - label: "Setup"
+      link: "next/setup"
     - label: "Routing"
       link: "next/routing"
+    - label: "Vercel"
+      link: "next/vercel"
 - label: "Advanced"
   items:
     - label: "styled-jsx"
