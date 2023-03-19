@@ -4,6 +4,19 @@ export default {
     background: "#FFFFFF",
     shape: `#F2F2FA`,
     text: `#282c34`,
-    title: `##20232a`,
+    title: `##282c34`,
+    components: {
+      blockquote: {
+        background: `#282c34`,
+        text: `#F2F2FA`,
+      },
+    },
+  },
+  fonts: {
+    // fontFace: {
+    //   family: "Open Sans",
+    //   file: "/fonts/OpenSans-Regular.ttf",
+    // },
+    body: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif`,
   },
 }

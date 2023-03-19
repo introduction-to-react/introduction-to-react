@@ -21,23 +21,23 @@ module.exports = {
         baseDir: `examples/gatsby-theme-docs`,
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Introduction to React`,
-        short_name: `Introduction to React`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        display: `standalone`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `Introduction to React`,
+    //     short_name: `Introduction to React`,
+    //     start_url: `/`,
+    //     background_color: `#ffffff`,
+    //     display: `standalone`,
+    //   },
+    // }, TODO:
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // trackingId: ``,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     // trackingId: ``,
+    //   },
+    // },
     `gatsby-plugin-remove-trailing-slashes`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
