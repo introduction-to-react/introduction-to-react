@@ -8,7 +8,7 @@ Node.js is a JavaScript runtime, so it basically allows you to run JS (outside o
 
 # NPM
 
-NPM is the Node Package Manager and as it's name suggests, enables you to use third-party packages.
+NPM is the **Node Package Manager** and as it's name suggests, enables you to use third-party packages.
 
 Your npm dependencies are specified in the file `package.json`
 
@@ -33,11 +33,11 @@ You'll be asked several questions like your projects description etc. and at the
 
 ## Installing new dependencies
 
-You can install dependencies using the `npm install <package name>` command.
+You can install dependencies using the `npm install <package name>` (or short `npm i <package name>`) command.
 
 The package will then be added as a dependency to the package.json file (under the key "dependencies") and it will also be downloaded into the node_modules folder.
 
-To install a package and add it as a "devDependency" to your package.json (instead of a normal "dependency), run `npm install --dev <package name>`.
+To install a package and add it as a "devDependency" to your package.json (instead of a normal "dependency), run `npm install --dev <package name>` (or short `npm i -D <package name>`).
 
 Theoretically, you could install all your dependencies as normal dependencies and not use dev-dependencies at all, but it's good practice to list packages, that are only necessary for development but not production (i.e. testing frameworks, code linters, code formatters), as dev-dependencies.
 

@@ -13,10 +13,6 @@ export default {
     },
   },
   fonts: {
-    // fontFace: {
-    //   family: "Open Sans",
-    //   file: "/fonts/OpenSans-Regular.ttf",
-    // },
     body: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif`,
   },
 }
